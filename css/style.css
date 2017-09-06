@@ -1,0 +1,314 @@
+html,
+body {
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden;
+}
+* {
+  outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p,
+span,
+a,
+div {
+  font-weight: normal;
+  text-decoration: none;
+  list-style: none;
+  list-style-type: none;
+  font-family: "Roboto";
+  margin: 0;
+  padding: 0;
+}
+h1:link,
+h2:link,
+h3:link,
+h4:link,
+h5:link,
+h6:link,
+ul:link,
+li:link,
+p:link,
+span:link,
+a:link,
+div:link,
+h1:visited,
+h2:visited,
+h3:visited,
+h4:visited,
+h5:visited,
+h6:visited,
+ul:visited,
+li:visited,
+p:visited,
+span:visited,
+a:visited,
+div:visited,
+h1:active,
+h2:active,
+h3:active,
+h4:active,
+h5:active,
+h6:active,
+ul:active,
+li:active,
+p:active,
+span:active,
+a:active,
+div:active {
+  color: #000;
+  text-decoration: none;
+}
+.wrapper {
+  max-width: 1155px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+.background {
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(..//img/1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.background::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  opacity: 0.5;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+}
+.container .text-container {
+  position: relative;
+  left: 100%;
+  transform: translateX(-100%);
+  text-align: center;
+  margin-left: 100px;
+}
+.container .head {
+  padding-top: 35px;
+  width: 100%;
+}
+.container .head .school-name {
+  width: 100%;
+  background-color: #e1b95a;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.22);
+  border: solid 1px #fad067;
+}
+.container .head .school-name .text-container h1 {
+  padding: 15px 17px 15px 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+  text-transform: uppercase;
+}
+@media (max-width: 1200px) {
+  .container .head .school-name .text-container h1 {
+    font-size: 1rem;
+  }
+}
+.container .head .school-description {
+  width: 100%;
+  border: solid 1px #fad067;
+  border-width: 1px;
+  background-color: rgba(31, 26, 13, 0.6);
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.22);
+}
+.container .head .school-description .text-container {
+  position: relative;
+}
+.container .head .school-description .text-container .dots {
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translate(-50%, -93%);
+}
+.container .head .school-description .text-container .dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #e1b95a;
+  margin: 0 5px;
+}
+.container .head .school-description .text-container p {
+  padding: 15px 17px;
+  font-size: 21px;
+  color: #e5c67e;
+  font-style: italic;
+  line-height: 1.143;
+}
+.container .main-text {
+  width: 100%;
+}
+.container .main-text h3 {
+  padding: 34px 0 36px;
+  font-size: 16px;
+  font-family: "Roboto Light";
+  color: #ffeec6;
+  line-height: 1.313;
+  text-align: center;
+}
+.container .about-lessons .flex-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.container .about-lessons .flex-wrapper .video-container {
+  margin-top: 10px;
+  z-index: 10;
+}
+.container .about-lessons .flex-wrapper .video-container .video {
+  position: relative;
+  width: 738px;
+  height: 410px;
+  border: 8px solid #827145;
+  background-color: rgba(0, 0, 0, 0.702);
+}
+.container .about-lessons .flex-wrapper .video-container .play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 156px;
+  height: 156px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #e6c775;
+  border-radius: 50%;
+  background-color: rgba(247, 190, 57, 0);
+  cursor: pointer;
+}
+.container .about-lessons .flex-wrapper .video-container .triangle {
+  top: 50%;
+  left: 57%;
+  transform: translate(-57%, -50%);
+  position: absolute;
+  border: 50px solid transparent;
+  border-left: 75px solid #e6c775;
+  cursor: pointer;
+}
+.container .about-lessons .flex-wrapper .form-container {
+  position: relative;
+  border-style: solid;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-width: 2px;
+  border-color: #827145;
+  width: 357px;
+  height: 422px;
+}
+.container .about-lessons .flex-wrapper .form-container .form-head {
+  padding: 15px 59px 20px 59px;
+  text-align: center;
+  font-size: 24px;
+  font-family: "Roboto Medium";
+  color: white;
+  line-height: 1.125;
+}
+.container .about-lessons .flex-wrapper .form-container .form-head span {
+  color: #e6c775;
+  font-weight: bold;
+}
+.container .about-lessons .flex-wrapper .form-container .form-head span.head {
+  font-size: 56px;
+}
+.container .about-lessons .flex-wrapper .form-container .form-bottom {
+  padding: 0 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.container .about-lessons .flex-wrapper .form-container .form-bottom form input {
+  border-radius: 20px;
+  background-color: white;
+  width: 100%;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  margin: 9px 0;
+  box-shadow: none;
+  border: none;
+}
+.container .about-lessons .flex-wrapper .form-container .form-bottom form button {
+  width: 100%;
+  border-style: solid;
+  margin-top: 10px;
+  border-width: 4px;
+  border-color: #820000;
+  border-radius: 30px;
+  padding: 20px;
+  box-sizing: border-box;
+  background: -moz-linear-gradient(top, #d20000 0%, #540000 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #d20000), color-stop(100%, #540000));
+  background: -webkit-linear-gradient(top, #d20000 0%, #540000 100%);
+  background: -o-linear-gradient(top, #d20000 0%, #540000 100%);
+  background: -ms-linear-gradient(top, #d20000 0%, #540000 100%);
+  background: linear-gradient(to bottom, #d20000 0%, #540000 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d20000', endColorstr='#540000', GradientType=0);
+  font-size: 35px;
+  font-family: "Roboto Light";
+  color: white;
+  text-transform: uppercase;
+  line-height: 0.75;
+  text-align: center;
+  cursor: pointer;
+}
+.container .about-lessons .flex-wrapper .form-container .dots {
+  position: absolute;
+  top: 102%;
+  left: 50%;
+  transform: translate(-50%, -93%);
+}
+.container .about-lessons .flex-wrapper .form-container .dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #e1b95a;
+  margin: 0 5px;
+}
+.container .image-section {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.container .image-section .wrapper {
+  position: relative;
+}
+.container .image-container {
+
+}
+.container .image-section .shine {
+  width: 170px;
+  height: 170px;
+  filter: blur(63px);
+  border-radius: 100%;
+  position: absolute;
+  background-color: white;
+  top: 0;
+  margin-left: 40px;
+}
+.container .image-section .image {
+  position: absolute;
+}
