@@ -5,8 +5,9 @@
     <title>Test</title>
 
     <!-- links for style -->
-    <link rel="stylesheet" href="less/style.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="less/style.css">
 
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
@@ -18,253 +19,333 @@
     <!-- верхняя панель навигации -->
   <header class="ged_page__header">
     <div class="item-top">
-      <div class="top-item top__local">
-        <a href="#" class="link__item link__item_active">Москва и МО</a>
-        <a href="#" class="link__item">С.-Петербург и ЛО</a>
-        <a href="#" class="link__item">Другие регионы</a>
-        <a href="#" class="link__item">Зарубежная недвижимость</a>
-        <a href="#" class="link__item">Поиск по карте</a>
-      </div>
-      <div class="top-item user_panel">
-        <a class="link__item">Разместить объявление</a>
-        <a class="link__item">Зарегистрироваться</a>
-        <a class="link__item">Войти</a>
+      <div class="ged_page__wrapper item-top_wrapper">
+        <ul class="top-item top_local">
+          <li class="link__item link__item_active"><a href="#">Москва и МО</a></li>
+          <li class="link__item"><a href="#" >С.-Петербург и ЛО</a></li>
+          <li class="link__item"><a href="#" >Другие регионы</a></li>
+          <li class="link__item"><a href="#" >Зарубежная недвижимость</a></li>
+          <li class="link__item"><a href="#">Поиск по карте</a></li>
+        </ul>
+        <ul class="top-item user_panel">
+          <li class="link__item"><img src="img/icons-pen.png" alt="pen" class="link__item-icon"><a href="#">Разместить объявление</a></li>
+          <li class="link__item"><img src="img/icon-plus.png" alt="pen" class="link__item-icon"><a href="#">Зарегистрироваться</a></li>
+          <li class="link__item"><img src="img/enter-icon.png" alt="pen" class="link__item-icon"><a href="#">Войти</a></li>
+        </ul>
       </div>
     </div>
     <div class="item-bottom">
-      <div class="logo bottom__logo">
-        <img src="img/GED-Logo.svg" alt="GED-Logo" class="logo-img">
-      </div>
-      <nav class="nav bottom__nav">
-        <a href="#" class="nav__link">Продажа</a>
-        <a href="#" class="nav__link">Аренда</a>
-        <a href="#" class="nav__link item__link_special">Спецпредложения</a>
-        <a href="#" class="nav__link item__link_active">Новостройки</a>
-        <a href="#" class="nav__link">Поселки</a>
-        <a href="#" class="nav__link">Риэлторы</a>
-        <a href="#" class="nav__link">Журнал</a>
-      </nav>
-      <div class="logo bottom__logo-second">
-        <svg src="img/Absolut-Logo.svg" alt="Absolut-Logo" xmlns="http://www.w3.org/2000/svg" class="bottom__logo-second-img bottom__logo-second-img__active">
-      </div>
-      <div class="banner bottom__banner">
-        <div class="banner_background">
-          <div class="banner_text">
-            <div class="text text-left">
-              <p>Квартиры в подмосковье</p>
-            </div>
-            <div class="text text-right">
-              <p>от</p>
-              <div class="number">1.5</div>
-              <p>млн руб</p>
+      <div class="ged_page__wrapper nav_wrapper">
+        <div class="bottom__nav-button">
+          <img src="img/menu-alt-512.png" alt="menu">
+        </div>
+        <div class="logo bottom__logo">
+          <img src="img/GED-Logo.svg" alt="GED-Logo" class="logo-img">
+        </div>
+        <nav class="nav bottom__nav">
+          <a href="#" class="nav__link nav__link-dotted">Продажа</a>
+          <a href="#" class="nav__link nav__link-dotted">Аренда</a>
+          <img src="img/icon-hot.png" class="nav__link-img"><a href="#" class="nav__link nav__link-special">Спецпредложения</a>
+          <a href="#" class="nav__link item__link_active">Новостройки</a>
+          <a href="#" class="nav__link">Поселки</a>
+          <a href="#" class="nav__link">Риэлторы</a>
+          <a href="#" class="nav__link">Журнал</a>
+        </nav>
+        <div class="logo bottom__logo-second">
+          <img src="img/Absolut-Logo.svg" alt="Absolut-Logo" xmlns="http://www.w3.org/2000/svg" class="bottom__logo-second-img bottom__logo-second-img__active">
+        </div>
+        <div class="banner bottom__banner">
+          <div class="banner_background">
+            <div class="banner_text">
+              <div class="text text-left">
+                <p>Квартиры в подмосковье</p>
+              </div>
+              <div class="text text-right">
+                <p>от</p>
+                <div class="number">1.5</div>
+                <p>млн руб</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </header>
-  <main class="ged_page__main">
-      <div class="ged_page__main-content">
-          <ul class="ged_page-breadcrumbles">
-            <li class="bredcrumbles-item"><a href="#" class="main__link">Новостройки</a></li>
-            <li class="bredcrumbles-item">></li>
-            <li class="bredcrumbles-item"><a href="#" class="main__link">Акции  и спецпредложения</a></li>
-          </ul>
-          <div class="big_block ged_page-item_big_block">
-            <div class="big_block_head">
-                <div class="ged_page-item_text">
-                    <h3>ВТБ24 предлагает покупателям "Пресня Сити", "Басманный,5" и "Царская площадь" премиальное банковское обсуживание</h3>
-                    <div class="get_page_date-end">до 31 января</div>
-                </div>
-                <div class="ged_page-item_time">
-                    <div class="days">5 дней</div>
-                    <div class="time-still">08 : 34 : 10</div>
-                </div>
-            </div>
-            <div class="big_block_body">
-                <a href="#" class="ged_page-item_image">
-                    <img src="img/moscow-863528_1280.jpg" alt="moscow" class="ged_page-item-img">
-                </a>
-                <div class="ged_page-item_content">
-                    <div class="content_text">
-                        <p>Размещение позиционирует институциональный стратегический маркетинг. Такое понимание ситуации восходит к Эл Райс, при этом нестандартный подход категорически экономит комплексный медиабизнес. Ценовая стратегия индуцирует бренд. </p>
+  <div class="ged_page__main">
+      <div class="ged_page__wrapper">
+        <div class="ged_page__main-content">
+            <div class="ged_page__top-bar">
+              <ul class="ged_page-breadcrumbles">
+                <li class="bredcrumbles-item"><a href="#" class="main__link">Новостройки</a></li>
+                <li class="bredcrumbles-item">></li>
+                <li class="bredcrumbles-item"><a href="#" class="main__link">Акции  и спецпредложения</a></li>
+              </ul>
+              <div class="big_block ged_page-item_big_block">
+                <div class="big_block_head">
+                    <div class="ged_page-item_text">
+                        <h3>ВТБ24 предлагает покупателям "Пресня Сити", "Басманный,5" и "Царская площадь" премиальное банковское обсуживание</h3>
+                        <div class="get_page_date-end">до 31 января</div>
                     </div>
-                    <div class="content_more-info">
-                        <span class="content_more-info_span">Узнать детали акции</span>
-                        <button class="content_more-info_button">+7 495 150 -XX-XX</button>
+                    <div class="ged_page-item_time">
+                        <div class="days">5 дней</div>
+                        <div class="time-still">08 : 34 : 10</div>
                     </div>
                 </div>
+                <div class="big_block_body">
+                    <a href="#" class="ged_page-item_image">
+                        <img src="img/moscow-863528_1280.jpg" alt="moscow" class="ged_page-item-img">
+                    </a>
+                    <div class="ged_page-item_content">
+                        <div class="content_text">
+                            <p>Размещение позиционирует институциональный стратегический маркетинг. Такое понимание ситуации восходит к Эл Райс, при этом нестандартный подход категорически экономит комплексный медиабизнес. Ценовая стратегия индуцирует бренд. </p>
+                        </div>
+                        <div class="content_more-info">
+                            <span class="content_more-info_span">Узнать детали акции</span>
+                            <button class="content_more-info_button">+7 495 150 -XX-XX</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <p class="ged_page__main-content_p">Ещё акции</p>
+              <div class="small_wrapper">
+                <div class="row-12">
+                    <div class="small-block ged_page-item_small-block col md-6 sm-12">
+                       <a href="#" class="small-block_image">
+                           <img src="img/6a5287_5da00f60f9694308b17d2d4581354356~mv2.jpg_srz_467_234_85_22_0.50_1.20_0.00_jpg_srz.jpg" alt="image" class="ged_page-item_img">
+                       </a>
+                        <div class="small-block_content">
+                            <div class="content-text">
+                                <h3>Ноговогодняя скидка 1 000 000 рублей в ЖК SREDA </h3>
+                                <p>Стратегия сегментации, в рамках сегодняшних воззрений, категорически тормозит процесс стратегического планирования</p>
+                            </div>
+                            <div class="left-time">
+                                <p>Осталось</p>
+                                <div class="left-time_bottom">
+                                    <div class="ged_page-item_number-days">
+                                        <div class="day-item day-item_left">0</div>
+                                        <div class="day-item day-item_right">8</div>
+                                    </div>
+                                     <span>дней</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="small-block ged_page-item_small-block col md-6 sm-12">
+                        <a href="#" class="small-block_image">
+                            <img src="img/king_for_a_day-n05wvz8ng98tyfjox934wts5tvc0lanhgdktfrgld8.jpg" alt="image" class="ged_page-item_img">
+                        </a>
+                        <div class="small-block_content">
+                            <div class="content-text">
+                                <h3>Ноговогодняя скидка 1 000 000 рублей в ЖК SREDA </h3>
+                                <p>Стратегия сегментации, в рамках сегодняшних воззрений, категорически тормозит процесс стратегического планирования</p>
+                            </div>
+                            <div class="left-time">
+                                <p>Осталось</p>
+                                <div class="left-time_bottom">
+                                    <div class="ged_page-item_number-days">
+                                        <div class="day-item day-item_left">0</div>
+                                        <div class="day-item day-item_right">8</div>
+                                    </div>
+                                     <span>дней</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="small-block ged_page-item_small-block col md-6 sm-12">
+                        <a href="#" class="small-block_image">
+                            <img src="img/20pers_for_all-n05vlkxg3nqavcxwup33c1a2860rn5ggqqazn296i4.jpg" alt="image" class="ged_page-item_img">
+                        </a>
+                        <div class="small-block_content">
+                            <div class="content-text">
+                                <h3>ВТБ24 предлагает покупателям «Пресня Сити», «Басманный,5» и «Царская площадь» премиальное банковское обслуживание </h3>
+                                <p>Банк ВТБ24 и девелоперы MR Group и Coalco приготовили для покупателей квартир и апартаментов в комплексах «Пресня Сити», «Басманный,5» и «Царская площадь» новогодний подарок - сертификат на премиальное обслуживание в рамках пакета услуг «Привилегия».ДО</p>
+                            </div>
+                            <div class="left-time">
+                                <p>Осталось</p>
+                                <div class="left-time_bottom">
+                                    <div class="ged_page-item_number-days">
+                                        <div class="day-item day-item_left">0</div>
+                                        <div class="day-item day-item_right">8</div>
+                                    </div>
+                                     <span>дней</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="small-block ged_page-item_small-block">
-             <a href="#" class="small-block_image">
-                 <img src="img/6a5287_5da00f60f9694308b17d2d4581354356~mv2.jpg_srz_467_234_85_22_0.50_1.20_0.00_jpg_srz.jpg" alt="image" class="ged_page-item_img">
-             </a>
-              <div class="small-block_content">
-                  <div class="content-text">
-                      <h3>Ноговогодняя скидка 1 000 000 рублей в ЖК SREDA </h3>
-                      <p>Стратегия сегментации, в рамках сегодняшних воззрений, категорически тормозит процесс стратегического планирования</p>
-                  </div>
-                  <div class="left-time">
-                      <p>Осталось</p>
-                      <div class="left-time_bottom">
-                          <div class="ged_page-item_number-days">
-                              <div class="day-item day-item_left">0</div>
-                              <div class="day-item day-item_right">8</div>
-                          </div>
-                           <span>дней</span>
-                      </div>
-                  </div>
+            <div class="ged_page__bottom-bar">
+              <p class="ged_page__bottom-bar_p">Другие акции</p>
+            <div class="ged_page__bottom-bar_other-sale">
+              <div class="other-sale ged_page-item__other-sale">
+                <div class="other-sale_image">
+                  <img src="img/ccd2ef1a3b82fc1851b6e5f8fdd05cb5-cb300x198.jpeg" alt="" class="other-sale_img">
+                </div>
+                <div class="other-sale_content">
+                  <p class="other-sale_p">Ноговогодняя скидка 1 000 000 рублей в ЖК SREDA</p>
+                  <div class="other-sale_date-end">до 31 января</div>
+                </div>
               </div>
-          </div>
-          <div class="small-block ged_page-item_small-block">
-              <a href="#" class="small-block_image">
-                  <img src="img/king_for_a_day-n05wvz8ng98tyfjox934wts5tvc0lanhgdktfrgld8.jpg" alt="image" class="ged_page-item_img">
-              </a>
-              <div class="small-block_content">
-                      <div class="content-text">
-                          <h3>Ноговогодняя скидка 1 000 000 рублей в ЖК SREDA </h3>
-                          <p>Стратегия сегментации, в рамках сегодняшних воззрений, категорически тормозит процесс стратегического планирования</p>
-                      </div>
-                      <div class="left-time">
-                          <p>Осталось</p>
-                          <div class="left-time_bottom">
-                              <div class="ged_page-item_number-days">
-                                  <div class="day-item day-item_left">0</div>
-                                  <div class="day-item day-item_right">8</div>
-                              </div>
-                               <span>дней</span>
-                          </div>
-                      </div>
-                  </div>
-          </div>
-          <div class="small-block ged_page-item_small-block">
-              <a href="#" class="small-block_image">
-                  <img src="img/20pers_for_all-n05vlkxg3nqavcxwup33c1a2860rn5ggqqazn296i4.jpg" alt="image" class="ged_page-item_img">
-              </a>
-              <div class="small-block_content">
-                  <div class="content-text">
-                      <h3>ВТБ24 предлагает покупателям «Пресня Сити», «Басманный,5» и «Царская площадь» премиальное банковское обслуживание </h3>
-                      <p>Банк ВТБ24 и девелоперы MR Group и Coalco приготовили для покупателей квартир и апартаментов в комплексах «Пресня Сити», «Басманный,5» и «Царская площадь» новогодний подарок - сертификат на премиальное обслуживание в рамках пакета услуг «Привилегия».ДО</p>
-                  </div>
-                  <div class="left-time">
-                      <p>Осталось</p>
-                      <div class="left-time_bottom">
-                          <div class="ged_page-item_number-days">
-                              <div class="day-item day-item_left">0</div>
-                              <div class="day-item day-item_right">8</div>
-                          </div>
-                           <span>дней</span>
-                      </div>
-                  </div>
+              <div class="other-sale ged_page-item__other-sale">
+                <div class="other-sale_image">
+                  <img src="img/moscow-863528_1280.jpg" alt="" class="other-sale_img">
+                </div>
+                <div class="other-sale_content">
+                  <p class="other-sale_p">Ноговогодняя скидка 1 000 000 рублей в ЖК SREDA</p>
+                  <div class="other-sale_date-end">до 31 января</div>
+                </div>
               </div>
-          </div>
+              <div class="other-sale ged_page-item__other-sale">
+                <div class="other-sale_image">
+                  <img src="img/6a5287_5da00f60f9694308b17d2d4581354356~mv2.jpg_srz_467_234_85_22_0.50_1.20_0.00_jpg_srz.jpg" alt="" class="other-sale_img">
+                </div>
+                <div class="other-sale_content">
+                  <p class="other-sale_p">Ноговогодняя скидка 1 000 000 рублей в ЖК SREDA</p>
+                  <div class="other-sale_date-end">до 31 января</div>
+                </div>
+              </div>
+              <div class="other-sale ged_page-item__other-sale">
+                <div class="other-sale_image">
+                  <img src="img/moscow-863528_1280.jpg" alt="" class="other-sale_img">
+                </div>
+                <div class="other-sale_content">
+                  <p class="other-sale_p">Ноговогодняя скидка 1 000 000 рублей в ЖК SREDA</p>
+                  <div class="other-sale_date-end">до 31 января</div>
+                </div>
+              </div>
+              <div class="other-sale ged_page-item__other-sale">
+                <div class="other-sale_image">
+                  <img src="img/ccd2ef1a3b82fc1851b6e5f8fdd05cb5-cb300x198.jpeg" alt="" class="other-sale_img">
+                </div>
+                <div class="other-sale_content">
+                  <p class="other-sale_p">Ноговогодняя скидка 1 000 000 рублей в ЖК SREDA</p>
+                  <div class="other-sale_date-end">до 31 января</div>
+                </div>
+              </div>
+              <div class="other-sale ged_page-item__other-sale">
+                <div class="other-sale_image">
+                  <img src="img/6a5287_5da00f60f9694308b17d2d4581354356~mv2.jpg_srz_467_234_85_22_0.50_1.20_0.00_jpg_srz.jpg" alt="" class="other-sale_img">
+                </div>
+                <div class="other-sale_content">
+                  <p class="other-sale_p">Ноговогодняя скидка 1 000 000 рублей в ЖК SREDA</p>
+                  <div class="other-sale_date-end">до 31 января</div>
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
       </div>
-      <div class="ged_page__main-slide-bar">
-          <div class="main-slide-bar__block">
-              <div class="slide-bar__block-image">
-                  <a href="#">
-                      <img src="img/Screenshot_1.jpg" alt="sale" class="slide-bar__block-image_img">
-                  </a>
-              </div>
-              <div class="slide-bar__block-content">
-                  <div class="slide-bar_title">ЖК "Прима-парк", скидки до 11%</div>
-                  <p class="slide-bar_text">Только раз в году, в декабре! Ипотека от 7.5%!</p>
-              </div>
-          </div>
-          <div class="main-slide-bar__block">
-              <div class="slide-bar__block-image">
-                  <a href="#">
-                      <img src="img/Screenshot_2.jpg" alt="sale" class="slide-bar__block-image_img">
-                  </a>
-              </div>
-              <div class="slide-bar__block-content">
-                  <div class="slide-bar_title">ЖК "Прима-парк", скидки до 11%</div>
-                  <p class="slide-bar_text">Только раз в году, в декабре! Ипотека от 7.5%!</p>
-              </div>
-          </div>
-          <div class="main-slide-bar__block">
-              <div class="slide-bar__block-image">
-                  <a href="#">
-                      <img src="img/Screenshot_3.jpg" alt="sale" class="slide-bar__block-image_img">
-                  </a>
-              </div>
-              <div class="slide-bar__block-content">
-                  <div class="slide-bar_title">ЖК "Прима-парк", скидки до 11%</div>
-                  <p class="slide-bar_text">Только раз в году, в декабре! Ипотека от 7.5%!</p>
-              </div>
-          </div>
-          <div class="main-slide-bar__block">
-              <div class="slide-bar__block-image">
-                  <a href="#">
-                      <img src="img/Screenshot_1.jpg" alt="sale" class="slide-bar__block-image_img">
-                  </a>
-              </div>
-              <div class="slide-bar__block-content">
-                  <div class="slide-bar_title">ЖК "Прима-парк", скидки до 11%</div>
-                  <p class="slide-bar_text">Только раз в году, в декабре! Ипотека от 7.5%!</p>
-              </div>
-          </div>
-          <div class="main-slide-bar__block">
-              <div class="slide-bar__block-image">
-                  <a href="#">
-                      <img src="img/Screenshot_2.jpg" alt="sale" class="slide-bar__block-image_img">
-                  </a>
-              </div>
-              <div class="slide-bar__block-content">
-                  <div class="slide-bar_title">ЖК "Прима-парк", скидки до 11%</div>
-                  <p class="slide-bar_text">Только раз в году, в декабре! Ипотека от 7.5%!</p>
-              </div>
-          </div>
-          <div class="main-slide-bar__block">
-              <div class="slide-bar__block-image">
-                  <a href="#">
-                      <img src="img/Screenshot_3.jpg" alt="sale" class="slide-bar__block-image_img">
-                  </a>
-              </div>
-              <div class="slide-bar__block-content">
-                  <div class="slide-bar_title">ЖК "Прима-парк", скидки до 11%</div>
-                  <p class="slide-bar_text">Только раз в году, в декабре! Ипотека от 7.5%!</p>
-              </div>
-          </div>
-          <div class="main-slide-bar__block">
-              <div class="slide-bar__block-image">
-                  <a href="#">
-                      <img src="img/Screenshot_1.jpg" alt="sale" class="slide-bar__block-image_img">
-                  </a>
-              </div>
-              <div class="slide-bar__block-content">
-                  <div class="slide-bar_title">ЖК "Прима-парк", скидки до 11%</div>
-                  <p class="slide-bar_text">Только раз в году, в декабре! Ипотека от 7.5%!</p>
-              </div>
-          </div>
-          <div class="main-slide-bar__block">
-              <div class="slide-bar__block-image">
-                  <a href="#">
-                      <img src="img/Screenshot_2.jpg" alt="sale" class="slide-bar__block-image_img">
-                  </a>
-              </div>
-              <div class="slide-bar__block-content">
-                  <div class="slide-bar_title">ЖК "Прима-парк", скидки до 11%</div>
-                  <p class="slide-bar_text">Только раз в году, в декабре! Ипотека от 7.5%!</p>
-              </div>
-          </div>
-          <div class="main-slide-bar__block">
-              <div class="slide-bar__block-image">
-                  <a href="#">
-                      <img src="img/Screenshot_3.jpg" alt="sale" class="slide-bar__block-image_img">
-                  </a>
-              </div>
-              <div class="slide-bar__block-content">
-                  <div class="slide-bar_title">ЖК "Прима-парк", скидки до 11%</div>
-                  <p class="slide-bar_text">Только раз в году, в декабре! Ипотека от 7.5%!</p>
-              </div>
-          </div>
-      </div>
-  </main>
-  <footer class="ged_page__footer"></footer>
+      <div class="clear_float"></div>
+  </div>
+  <div class="ged_page__main-slide-bar">
+     <div class="slider-wrapper">
+         <div class="main-slide-bar__block">
+             <div class="slide-bar__block-image">
+                 <a href="#">
+                     <img src="img/Screenshot_1.jpg" alt="sale" class="slide-bar__block-image_img">
+                 </a>
+             </div>
+             <div class="slide-bar__block-content">
+                 <div class="slide-bar_title">ЖК "Прима-парк", скидки до 11%</div>
+                 <p class="slide-bar_text">Только раз в году, в декабре! Ипотека от 7.5%!</p>
+             </div>
+         </div>
+         <div class="main-slide-bar__block">
+             <div class="slide-bar__block-image">
+                 <a href="#">
+                     <img src="img/Screenshot_2.jpg" alt="sale" class="slide-bar__block-image_img">
+                 </a>
+             </div>
+             <div class="slide-bar__block-content">
+                 <div class="slide-bar_title">ЖК "Прима-парк", скидки до 11%</div>
+                 <p class="slide-bar_text">Только раз в году, в декабре! Ипотека от 7.5%!</p>
+             </div>
+         </div>
+         <div class="main-slide-bar__block">
+             <div class="slide-bar__block-image">
+                 <a href="#">
+                     <img src="img/Screenshot_3.jpg" alt="sale" class="slide-bar__block-image_img">
+                 </a>
+             </div>
+             <div class="slide-bar__block-content">
+                 <div class="slide-bar_title">ЖК "Прима-парк", скидки до 11%</div>
+                 <p class="slide-bar_text">Только раз в году, в декабре! Ипотека от 7.5%!</p>
+             </div>
+         </div>
+         <div class="main-slide-bar__block">
+             <div class="slide-bar__block-image">
+                 <a href="#">
+                     <img src="img/Screenshot_1.jpg" alt="sale" class="slide-bar__block-image_img">
+                 </a>
+             </div>
+             <div class="slide-bar__block-content">
+                 <div class="slide-bar_title">ЖК "Прима-парк", скидки до 11%</div>
+                 <p class="slide-bar_text">Только раз в году, в декабре! Ипотека от 7.5%!</p>
+             </div>
+         </div>
+         <div class="main-slide-bar__block">
+             <div class="slide-bar__block-image">
+                 <a href="#">
+                     <img src="img/Screenshot_2.jpg" alt="sale" class="slide-bar__block-image_img">
+                 </a>
+             </div>
+             <div class="slide-bar__block-content">
+                 <div class="slide-bar_title">ЖК "Прима-парк", скидки до 11%</div>
+                 <p class="slide-bar_text">Только раз в году, в декабре! Ипотека от 7.5%!</p>
+             </div>
+         </div>
+         <div class="main-slide-bar__block">
+             <div class="slide-bar__block-image">
+                 <a href="#">
+                     <img src="img/Screenshot_3.jpg" alt="sale" class="slide-bar__block-image_img">
+                 </a>
+             </div>
+             <div class="slide-bar__block-content">
+                 <div class="slide-bar_title">ЖК "Прима-парк", скидки до 11%</div>
+                 <p class="slide-bar_text">Только раз в году, в декабре! Ипотека от 7.5%!</p>
+             </div>
+         </div>
+         <div class="main-slide-bar__block">
+             <div class="slide-bar__block-image">
+                 <a href="#">
+                     <img src="img/Screenshot_1.jpg" alt="sale" class="slide-bar__block-image_img">
+                 </a>
+             </div>
+             <div class="slide-bar__block-content">
+                 <div class="slide-bar_title">ЖК "Прима-парк", скидки до 11%</div>
+                 <p class="slide-bar_text">Только раз в году, в декабре! Ипотека от 7.5%!</p>
+             </div>
+         </div>
+         <div class="main-slide-bar__block">
+             <div class="slide-bar__block-image">
+                 <a href="#">
+                     <img src="img/Screenshot_2.jpg" alt="sale" class="slide-bar__block-image_img">
+                 </a>
+             </div>
+             <div class="slide-bar__block-content">
+                 <div class="slide-bar_title">ЖК "Прима-парк", скидки до 11%</div>
+                 <p class="slide-bar_text">Только раз в году, в декабре! Ипотека от 7.5%!</p>
+             </div>
+         </div>
+         <div class="main-slide-bar__block">
+             <div class="slide-bar__block-image">
+                 <a href="#">
+                     <img src="img/Screenshot_3.jpg" alt="sale" class="slide-bar__block-image_img">
+                 </a>
+             </div>
+             <div class="slide-bar__block-content">
+                 <div class="slide-bar_title">ЖК "Прима-парк", скидки до 11%</div>
+                 <p class="slide-bar_text">Только раз в году, в декабре! Ипотека от 7.5%!</p>
+             </div>
+         </div>
+     </div>
+  </div>
   <!-- scripts for dynamic -->
   <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/slick.min.js">
+
+  </script>
   <script src="js/main.js"></script>
 </body>
 </html>
